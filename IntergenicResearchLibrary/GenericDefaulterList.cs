@@ -7,9 +7,42 @@ namespace IntergenicResearchLibrary
     {
         public List<T> Libraries { get; set; } = new List<T>();
 
-        public GenericDefaulterList(List<T> Libraries)
+         private T[] defaulStudent;
+        private int totalEle;
+        private const int DEFAULTSIZE = 20;
+        public GenericDefaulterList()
         {
-            Libraries = libraries;
+            defaulStudent = new T[DEFAULTSIZE];
+            totalEle = 0;
+        }
+
+        public GenericDefaulterList(int size) 
+        {
+            defaulStudent = new T[size];
+            totalEle = 0;
+        }
+
+        public void Add(T item)
+        {
+            if(totalEle < defaulStudent.Length)
+            {
+                defaulStudent[totalEle] = item;
+                totalEle++;
+            }else{
+                throw new System.Exception("defaulStudent collection is full...");
+            }
+        }
+
+    
+
+        public T[] GetDefaulter()
+        {
+            if(totalEle > 0)
+            {
+                return defaulStudent;
+            }else{
+                throw new System.Exception("defaulStudent collection is empty...");
+            }
         }
 
     }
