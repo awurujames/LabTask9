@@ -1,0 +1,3 @@
+C:\codebitacademyfolder\C#\LabTask9\intergenicResearchLibrary\obj\Debug\netcoreapp3.1\IntergenicResearchLibrary.csprojAssemblyReference.cache
+C:\codebitacademyfolder\C#\LabTask9\intergenicResearchLibrary\obj\Debug\netcoreapp3.1\IntergenicResearchLibrary.AssemblyInfoInputs.cache
+C:\codebitacademyfolder\C#\LabTask9\intergenicResearchLibrary\obj\Debug\netcoreapp3.1\IntergenicResearchLibrary.AssemblyInfo.cs
